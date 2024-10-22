@@ -18,12 +18,13 @@
         }
         .container {
             text-align: center;
+            width: 90%; /* Make container width relative */
         }
         h1 {
             margin: 0; /* Remove default margin from h1 */
         }
         .cooptron {
-            font-size: 6rem;
+            font-size: clamp(2rem, 10vw, 6rem); /* Set a responsive font size with max limit */
             font-weight: 400;
         }
         .coop {
@@ -33,10 +34,10 @@
             color: #E98287;
         }
         .subtitle {
-            font-size: 2rem;
+            font-size: clamp(1rem, 4vw, 2rem); /* Set a responsive subtitle size with max limit */
             font-weight: 300;
             color: #EBCC8E;
-            margin-top: 5px; /* Halved the gap between title and subtitle */
+            margin-top: 5px;
         }
         .contact-btn {
             margin-top: 20px;
@@ -44,7 +45,7 @@
             background-color: #EBCC8E;
             border: none;
             color: #282727;
-            font-size: 1rem;
+            font-size: clamp(1rem, 4vw, 1.5rem); /* Responsive button text size with max limit */
             cursor: pointer;
             text-decoration: none;
         }
